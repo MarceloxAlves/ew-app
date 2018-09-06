@@ -3,8 +3,22 @@
 </template>
 
 <script>
+    import io from 'socket.io-client';
     export default {
-        name: "Home"
+      name: "Home",
+      data() {
+        return {
+          user: '',
+          message: '',
+          messages: [],
+          socket: io('localhost:3001')
+        }
+      },
+      methods: {
+        sendMessage(e) {
+          e.preventDefault();
+        }
+      }
     }
 </script>
 
