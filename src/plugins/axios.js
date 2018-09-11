@@ -20,7 +20,7 @@ let errorFunction = error => {
 
 const axiosEW =
      //axios.create({ baseURL: 'http://localhost:8081/' })
-     axios.create({ baseURL: 'http://localhost:3000/' })
+     axios.create({ baseURL: 'https://editworld-server.herokuapp.com/' })
 
 axiosEW.interceptors.request.use(loadFunction)
 

@@ -20,7 +20,7 @@ Vue.prototype.$auth =  auth
 
 Vue.use(Notifications)
 Vue.use(VueSessionStorage)
-Vue.use(VueSocketio, 'http://localhost:3000');
+Vue.use(VueSocketio, 'https://editworld-server.herokuapp.com/');
 
 Vue.config.productionTip = false
 
